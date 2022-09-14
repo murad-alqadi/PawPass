@@ -31,7 +31,7 @@ export default function NavBar() {
   return (
     <div id='navbar'>
       <div className="title noselect">
-        VaaS
+        PawPass
       </div>
       <Button
         id="basic-button"

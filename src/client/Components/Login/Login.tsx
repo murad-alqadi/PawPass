@@ -95,7 +95,7 @@ const Login = () => {
           }}
         >
           <div>
-            <h1>VaaS</h1>
+            <h1>PawPass</h1>
           </div>
           <TextField
               id="login-username-input"
