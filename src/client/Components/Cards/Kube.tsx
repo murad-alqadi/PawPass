@@ -11,7 +11,6 @@ import Container from "@mui/system/Container";
 import Button from "@mui/material/Button";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
-import GaugeChart from 'react-gauge-chart';
 import "./styles.css";
 
 const Kube = (props: ClusterTypes) => {
@@ -162,17 +161,7 @@ const Kube = (props: ClusterTypes) => {
             <h3>CPU Usage</h3>
           </div>
           <div className="ov-content">
-            <GaugeChart
-              nrOfLevels={30}
-              colors={["green", "#FF5F6D"]}
-              arcWidth={0.1}
-              percent={(apiReducer.clusterQueryData[props._id]?.cpuLoad || 0)/100}
-              style={{
-                width: '90px',
-                height: '2px'
-              }}
-              textColor='black'
-            />
+
           </div>
         </div>
         <div className="ov-box">
@@ -180,17 +169,7 @@ const Kube = (props: ClusterTypes) => {
             <h3>Memory Usage</h3>
           </div>
           <div className="ov-content">
-            <GaugeChart
-              nrOfLevels={30}
-              colors={["green", "#FF5F6D"]}
-              arcWidth={0.1}
-              percent={(apiReducer.clusterQueryData[props._id]?.memoryLoad || 0)/2048}
-              style={{
-                width: '90px',
-                height: '2px'
-              }}
-              textColor='black'
-            />
+
           </div>
           <div className="ov-metric">
             <p>{(apiReducer.clusterQueryData[props._id]?.memoryLoad || 0) + ' /2048 MB'}</p>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState} from 'react';
-import ReactJson from 'react-json-view';
 import customMetric from '../../Queries/Custom';
 import { Container, TextField, Button } from '@mui/material';
 import { Modules } from '../../Interfaces/ICluster';
@@ -90,7 +89,6 @@ const CustomQuery = (props: Modules) => {
             fontSize: '13px'
           }}
         >
-          <ReactJson src={data || {input: 'query'}} />
         </Container>
       </div>
     </Container>
